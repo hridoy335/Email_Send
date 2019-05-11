@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Email";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Email</h2>
+<h6 class="alert-danger">@ViewBag.error</h6>
+<div class="container">
+   <form method="post" action="Email">
+       <span class="form-control-static">From Mail:</span>
+       <input class="form-control" type="text" id="FromMail" name="FromMail" />
+       <span class="form-control-static"> Subject :</span>
+       <input class="form-control" type="text" id="Subject" name="Subject" />
+       <span class="form-control-static">Discription :</span>
+       <input class="form-control" type="text" id="discription" name="Discription"/> 
+       <br />
+       <br />
+      <button type="submit">Send Mail</button>
+   </form>
+
+</div>
